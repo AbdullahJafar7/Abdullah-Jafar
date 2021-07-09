@@ -1,3 +1,7 @@
-body {
-  background-color: tomato;
+:root {
+  --primar-color: #41b3a3;
+  --seconary-color: #85dcb8;
+  --acent-color: #7cabe8;
+  --header-color: #000000;
+  --bodytxt-color: #ffffff;
 }
