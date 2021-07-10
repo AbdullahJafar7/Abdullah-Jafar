@@ -1,7 +1,8 @@
+/*typography*/
 :root {
   --primar-color: #93f1da;
   --seconary-color: #85dcb8;
-  --acent-color: #7cabe8;
+  --acent-color: #23348a;
   --header-color: #162449;
   --bodytxt-color: #566599;
 }
@@ -10,7 +11,6 @@ html {
 }
 body {
   margin: 1.5rem;
-  background: var(--primar-color);
   font-family: inter, arial, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
@@ -46,5 +46,28 @@ h3 {
   }
   h3 {
     font-size: 2.4rem;
+  }
+}
+/*links*/
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.link-arrow {
+  color: var(--acent-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.35s;
+}
+.link-arrow:hover::after {
+  margin-left: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
   }
 }
