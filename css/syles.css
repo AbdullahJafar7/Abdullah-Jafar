@@ -1,10 +1,10 @@
 /*typography*/
 :root {
-  --primar-color: #93f1da;
-  --seconary-color: #85dcb8;
+  --primar-color: #932432;
+  --seconary-color: #de354c;
   --acent-color: #23348a;
-  --header-color: #162449;
-  --bodytxt-color: #566599;
+  --header-color: #461a8d;
+  --bodytxt-color: #f3f3f3;
 }
 html {
   font-size: 62.5%;
@@ -100,5 +100,30 @@ a {
   }
   .bage--small {
     font-size: 1.2rem;
+  }
+}
+
+/* lists */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--header-color);
+}
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+.list--check {
+  list-style-image: url(../css/images/tick.svg);
+  padding-left: 3rem;
+}
+.list--check .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .list--check .list__item {
+    padding-left: 0;
   }
 }
