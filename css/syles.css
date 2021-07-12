@@ -5,6 +5,8 @@
   --acent-color: #23348a;
   --header-color: #461a8d;
   --bodytxt-color: #f3f3f3;
+  --border-color: #ccc;
+  --border-radius: 30px;
 }
 *,
 *::after,
@@ -207,5 +209,36 @@ a {
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5 rem;
+  }
+}
+
+/* inputs */
+
+.input {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  color: var(--header-color);
+  font-size: 2rem;
+  outline: none;
+  padding: 1.5rem 3.5rem;
+}
+::placeholder {
+  color: #cdcbd7;
+}
+.input-group {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+}
+.input-group.btn {
+  margin: 4px;
+}
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
   }
 }
