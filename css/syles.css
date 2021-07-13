@@ -5,6 +5,7 @@
   --acent-color: #23348a;
   --header-color: #461a8d;
   --bodytxt-color: rgb(5, 27, 150);
+  --bodytxtdar-color: #00027d;
   --border-color: #3fb6ee;
   --icon-color: #5c96b1;
   --border-radius: 30px;
@@ -256,4 +257,49 @@ a {
 }
 .media__image {
   margin-top: 1rem;
+}
+
+/* quotes */
+
+.quote {
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--bodytxtdar-color);
+  line-height: 1.3;
+}
+
+.quote__txt::before {
+  content: open-quote;
+}
+.quote__txt::after {
+  content: close-quote;
+}
+
+.quote__author {
+  font-size: 3rem;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 0;
+}
+.quote__company {
+  columns: var(--bodytxt-color);
+  opacity: 0.4;
+  font-style: normal;
+  font-size: 2rem;
+}
+.quote__line {
+  position: relative;
+  bottom: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .quote {
+    font-size: 2rem;
+  }
+  .quote__author {
+    font-size: 2.4rem;
+  }
+  .quote__company {
+    font-size: 1.6rem;
+  }
 }
