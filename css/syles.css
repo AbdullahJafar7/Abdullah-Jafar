@@ -4,8 +4,9 @@
   --seconary-color: #e63950;
   --acent-color: #23348a;
   --header-color: #461a8d;
-  --bodytxt-color: #f3f3f3;
-  --border-color: #ccc;
+  --bodytxt-color: rgb(5, 27, 150);
+  --border-color: #3fb6ee;
+  --icon-color: #5c96b1;
   --border-radius: 30px;
 }
 *,
@@ -104,6 +105,7 @@ a {
 }
 .bage--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 @media screen and (min-width: 1024px) {
   .bages {
@@ -146,7 +148,7 @@ a {
   height: 40px;
 }
 .icon--primary {
-  fill: var(--primar-color);
+  fill: var(--icon-color);
 }
 .icon-contaner {
   background: #f3f9fa;
@@ -226,7 +228,6 @@ a {
   color: #cdcbd7;
 }
 .input-group {
-  border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   display: flex;
 }
@@ -241,4 +242,18 @@ a {
   .input {
     font-size: 1.5rem;
   }
+}
+
+/* media official */
+.media {
+  display: flex;
+}
+.media__title {
+  margin-top: 0;
+}
+.media__body {
+  margin: 0 2rem;
+}
+.media__image {
+  margin-top: 1rem;
 }
