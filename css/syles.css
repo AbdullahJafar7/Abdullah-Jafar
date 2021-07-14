@@ -161,6 +161,18 @@ a {
   align-items: center;
 }
 
+/* for reviewtest */
+.icon--small {
+  height: 30px;
+  width: 30px;
+}
+.icon--white {
+  fill: #fff;
+}
+.icon-contaner--acent {
+  background: var(--acent-color);
+}
+
 /* buttons */
 
 .btn {
@@ -318,5 +330,31 @@ a {
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* testemonial */
+.test {
+  padding: 3rem;
+}
+.test__image {
+  position: relative;
+}
+.test__image > img {
+  width: 100%;
+}
+.test__image > .icon-contaner {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+  .test .quote,
+  .test .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .test .quote {
+    margin-left: 6rem;
   }
 }
