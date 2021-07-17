@@ -1,11 +1,12 @@
 /*typography*/
 :root {
   --primar-color: #3fb6ee;
-  --seconary-color: #e63950;
+  --seconary-color: #d31f37;
   --acent-color: #23348a;
   --header-color: #461a8d;
   --bodytxt-color: rgb(5, 27, 150);
   --bodytxtdar-color: #00027d;
+  --bages--secondary: #c9000d;
   --border-color: #3fb6ee;
   --icon-color: #5c96b1;
   --border-radius: 30px;
@@ -45,7 +46,7 @@ h2 {
   font-size: 4rem;
 }
 h3 {
-  font-family: 3rem;
+  font-size: 3rem;
 }
 @media screen and (min-width: 1024px) {
   body {
@@ -110,7 +111,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .bages {
-    font-size: 1.5 rem;
+    font-size: 1.5rem;
   }
   .bage--small {
     font-size: 1.2rem;
@@ -223,7 +224,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .btn {
-    font-size: 1.5 rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -269,6 +270,82 @@ a {
 }
 .media__image {
   margin-top: 1rem;
+}
+
+/* Cards */
+
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px white;
+  overflow: hidden;
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 7%;
+}
+
+.card--primary .card__header {
+  background: var(--primar-color);
+  color: #fff;
+}
+
+.card--secondary .card__header {
+  background: var(--bages--secondary);
+  color: #fff;
+}
+
+.card--primary .badge--primary {
+  background: var(--primar-color);
+}
+
+.card--secondary .badge--secondary {
+  background: var(--bages--secondary);
+}
+
+/* Plans */
+
+.plan__name {
+  color: #fff;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+.plan__price {
+  font-size: 5rem;
+}
+
+.plan__biling {
+  font-size: 2rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+
+.plan__desc {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.plan .list__item {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 2.4rem;
+  }
+  .plan__price {
+    font-size: 5rem;
+  }
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+  .plan__desc {
+    font-size: 1.7rem;
+  }
 }
 
 /* quotes */
