@@ -16,48 +16,20 @@
   </head>
 
   <body>
-    <section class="block container">
-      <header class="block__header">
-        <h2 class="block__heading">head</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          molestiae officiis assumenda saepe odio voluptas voluptatum aliquam
-          labore doloremque sit?
-        </p>
-      </header>
-      <div class="plan">
-        <div class="card card--secondary">
-          <header class="card__header">
-            <h3 class="plan__name">Entry</h3>
-            <span class="plan__price">$14</span>
-            <span class="plan__biling">/month</span>
-            <span class="bages bages--secondary bages--small">10% OFF</span>
-            <span style="display: block" class="plan__disc"
-              >easy start on the cloud</span
-            >
-          </header>
-          <div class="card__body">
-            <ul class="list list--check">
-              <li class="list__item">home</li>
-              <li class="list__item">car</li>
-              <li class="list__item">insure</li>
-              <li class="list__item">jobs</li>
-              <button class="btn btn--outline btn--block">get now</button>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="block block--dark block--skewed--left">
-      <div class="container">
-        <h2 class="block__heading">head</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          molestiae officiis assumenda saepe odio voluptas voluptatum aliquam
-          labore doloremque sit?
-        </p>
-      </div>
-    </section>
+    <nav class="nav collaps">
+      <a class="nav__brand" href="/"
+        ><img src="./css/images/logo.svg" alt=""
+      /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="css/images/sprite.svg#menu"></use>
+        <ul class="list nav__list collaps__content">
+          <li class="nav__items"><a href="#">hosting</a></li>
+          <li class="nav__items"><a href="#">costing</a></li>
+          <li class="nav__items"><a href="#">hofafaf</a></li>
+          <li class="nav__items"><a href="#">hssting</a></li>
+        </ul>
+      </svg>
+    </nav>
     <script src=".//css/main.js"></script>
   </body>
 </html>
