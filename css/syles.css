@@ -63,6 +63,14 @@ h3 {
   }
 }
 
+/* video */
+
+video {
+  height: 6.5rem;
+  width: 6.5rem;
+  object-fit: cover;
+}
+
 /*links*/
 
 a {
