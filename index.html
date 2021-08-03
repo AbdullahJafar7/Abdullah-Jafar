@@ -11,10 +11,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="./css/components/syles.css" />
+    <link rel="stylesheet" href="syles.css" />
     <title>Abdullah Jafar</title>
   </head>
   <body>
+    <nav class="nav collaps">
+      <a class="nav__brand" href="/"
+        ><video autoplay loop src="images/logomy.mp4"></video
+      ></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collaps__content">
+        <li class="nav__items"><a href="#">ABOUT ME</a></li>
+        <li class="nav__items"><a href="#">contact me </a></li>
+        <li class="nav__items"><a href="#">what i do</a></li>
+        <li class="nav__items"><a href="#">projects</a></li>
+      </ul>
+    </nav>
+
     <section class="block block--dark block--skewed--left hero">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
@@ -22,11 +37,7 @@
           <p class="hero__tagline">A 14 year old Web and App Developer</p>
           <a href="" class="btn btn--acent btn--long">Contact</a>
         </header>
-        <img
-          class="hero__image"
-          src="/css/components/images/banner.png"
-          alt=""
-        />
+        <img class="hero__image" src="images/banner.png" alt="" />
       </div>
     </section>
     <script src=".//css/main.js"></script>
