@@ -38,6 +38,8 @@ h1,
 h2,
 h3 {
   color: var(--header-color);
+  margin-bottom: 1rem;
+  line-height: 1.1;
 }
 h1 {
   font-size: 7rem;
@@ -608,4 +610,10 @@ a {
   .nav__items {
     border: 0;
   }
+}
+
+/* hero */
+
+.hero__tagline {
+  font-size: 2rem;
 }
