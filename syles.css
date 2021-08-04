@@ -63,12 +63,11 @@ h3 {
   }
 }
 
-/* video */
+/* logo */
 
-video {
-  height: 9rem;
-  width: 9rem;
-  object-fit: cover;
+.logo {
+  height: 10rem;
+  width: 10rem;
 }
 
 /*links*/
