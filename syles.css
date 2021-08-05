@@ -66,8 +66,9 @@ h3 {
 /* logo */
 
 .logo {
-  height: 10rem;
+  height: 8.5rem;
   width: 10rem;
+  object-fit: cover;
 }
 
 /*links*/
