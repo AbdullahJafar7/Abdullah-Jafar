@@ -9,7 +9,7 @@
   --bages--secondary: #c9000d;
   --border-color: #3fb6ee;
   --icon-color: #5c96b1;
-  --border-radius: 30px;
+  --border-radius: 40px;
 }
 *,
 *::after,
@@ -190,12 +190,21 @@ a {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
-  margin: 1rem 0;
+  margin: 0.7rem 0.7rem 0.7rem 0;
   padding: 2rem 3rem;
   text-transform: uppercase;
   white-space: nowrap;
   text-align: center;
+  outline: 0;
 }
+
+.btn .icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
 .btn--primary {
   background: var(--primar-color);
   color: white;
@@ -248,9 +257,9 @@ a {
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
   color: var(--header-color);
-  font-size: 2rem;
+  font-size: 1.7rem;
   outline: none;
-  padding: 1.5rem 3.5rem;
+  padding: 1.5rem 3.5rem 1.5rem 2rem;
 }
 ::placeholder {
   color: #cdcbd7;
@@ -633,5 +642,29 @@ a {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+/* domian */
+.block-dom .input-group {
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+  background: white;
+}
+.domain-price {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .domain-price {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }

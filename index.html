@@ -14,46 +14,33 @@
     <link rel="stylesheet" href="syles.css" />
     <title>Abdullah Jafar</title>
   </head>
+
   <body>
-    <nav class="nav collaps">
-      <a class="nav__brand" href="/"
-        ><img class="logo" src="/images/LOGOH.png" alt="A Logo"
-      /></a>
-      <svg class="icon icon--white nav__toggler">
-        <use xlink:href="/images/sprite.svg#menu"></use>
-      </svg>
-
-      <ul class="list nav__list collaps__content">
-        <li class="nav__items"><a href="#">ABOUT ME</a></li>
-        <li class="nav__items"><a href="#">contact me</a></li>
-        <li class="nav__items"><a href="#">what i do</a></li>
-        <li class="nav__items"><a href="#">hshs</a></li>
-      </ul>
-    </nav>
-
-    <section class="block block--dark block--skewed--left hero">
-      <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
-          <h1 class="block__heading">Abdullah Jafar</h1>
-          <p class="hero__tagline">A 14 year old Web and App Developer</p>
-          <a href="" class="btn btn--acent btn--long">Contact</a>
-        </header>
-        <picture>
-          <source
-            type="images/webp"
-            srcset="
-              images/resized/banner.webp    1x,
-              images/resized/banner@2x.webp 2x
-            " />
-          <source
-            type="images/webp"
-            srcset="
-              images/resized/banner.png    1x,
-              images/resized/banner@2x.png 2x
-            " />
-          <img class="hero__image" src="images/resized/banner.png" alt=""
-        /></picture>
+    <section class="block container block-dom">
+      <header class="block__header">
+        <h2>what i do</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+          aliquid!
+        </p>
+      </header>
+      <div class="input-group">
+        <input type="text" class="input" placeholder="Enter text here" />
+        <button class="btn btn--acent">
+          <svg class="icon icon--white">
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg>
+          search
+        </button>
       </div>
+      <ul class="list domain-price">
+        <li><span class="bages bages--secondary">ssss</span></li>
+        <li>sss</li>
+        <li>ssss</li>
+        <li>sss</li>
+        <li>ssss</li>
+        <li>sss</li>
+      </ul>
     </section>
 
     <script src=".//css/main.js"></script>
