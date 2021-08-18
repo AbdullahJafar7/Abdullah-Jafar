@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- beginning of head -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,9 +13,471 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="syles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Abdullah Jafar</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
   </head>
+  <!-- end of head -->
+  <!-- beginning of body -->
   <body>
+    <header>
+      <nav class="nav collaps">
+        <a class="nav__brand" href="/"
+          ><img class="logo" src="/images/LOGOH.png" alt=""
+        /></a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="/images/sprite.svg#menu"></use>
+        </svg>
+
+        <ul class="list nav__list collaps__content">
+          <li class="nav__items"><a href="#">ABOUT ME</a></li>
+          <li class="nav__items">
+            <a href="mailto:abdullah.haand@gamil.com">contact me</a>
+          </li>
+          <li class="nav__items"><a href="#">what i do</a></li>
+        </ul>
+      </nav>
+      <section class="block block--dark block--skewed--left hero">
+        <div class="container grid grid--1x2">
+          <div class="block__header hero__content">
+            <h1
+              class="block__heading"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              &#60; Abdullah Jafar &gt;
+            </h1>
+            <p class="hero__tagline">A 14 year old Web and App Developer</p>
+            <a
+              href="mailto:abdullah.haand@gmail.com"
+              class="btn btn--acent btn--long"
+              >Contact</a
+            >
+          </div>
+          <picture
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
+            <source
+              type="images/webp"
+              srcset="
+                images/resized/banner.webp    1x,
+                images/resized/banner@2x.webp 2x
+              " />
+            <source
+              type="images/webp"
+              srcset="
+                images/resized/banner.png    1x,
+                images/resized/banner@2x.png 2x
+              " />
+            <img class="hero__image" src="images/resized/banner.png" alt=""
+          /></picture>
+        </div>
+      </section>
+    </header>
+
+    <!-- easy -->
+    <section class="block container extra__padding">
+      <header
+        class="block__header"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-duration="1000"
+      >
+        <h2>I Am A Web And App Developer</h2>
+        <p>I Enjoy Developing Apps and Website For Others</p>
+      </header>
+      <article class="grid grid--1x2 feature">
+        <div
+          class="feature__content"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="800"
+        >
+          <span class="icon-contaner">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#computer"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Simple Fast Websites</h3>
+          <p>
+            I make Websites that have a modern look and are super easy to use.
+            My websites are simple with clean code. I use the best methods to
+            make a great and fast website!!!
+          </p>
+          <a href="mailto:abdullah.haand@gmail.com" class="link-arrow"
+            >learn More</a
+          >
+        </div>
+
+        <picture
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="800"
+        >
+          <source
+            type="image/webp"
+            srcset="
+              images/resized/easywebp.webp    1x,
+              images/resized/easy@2xwebp.webp 2x
+            "
+          />
+          <source
+            type="image/jpg"
+            srcset="images/resized/easy.jpg 1x, images/resized/easy@2x.jpg 2x"
+          />
+
+          <img class="feature__image" src="images/resized/easy@2x.jpg" alt="" />
+        </picture>
+      </article>
+
+      <article class="grid grid--1x2 feature">
+        <div
+          class="feature__content"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="800"
+        >
+          <span class="icon-contaner">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#wordpress"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Wordpress Websites</h3>
+          <p>
+            I make great wordpress website that are responsive and are fully
+            designed by you. All the websites that I develop are made for all
+            platforms. For More Information Contact me!
+          </p>
+          <a href="mailto:abdullah.haand@gmail.com" class="link-arrow"
+            >learn More</a
+          >
+        </div>
+
+        <picture
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="800"
+        >
+          <source
+            type="image/webp"
+            srcset="
+              images/resized/easywebp.webp    1x,
+              images/resized/easy@2xwebp.webp 2x
+            "
+          />
+          <source
+            type="image/jpg"
+            srcset="images/resized/easy.jpg 1x, images/resized/easy@2x.jpg 2x"
+          />
+
+          <img class="feature__image" src="images/resized/easy@2x.jpg" alt="" />
+        </picture>
+      </article>
+    </section>
+    <!-- plans -->
+    <section class="block container block--plans extra__paddingx">
+      <div class="grid grid--1x3">
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Basic</h3>
+              <span class="plan__price">$35</span>
+              <span class="plan__biling">/Web</span>
+              <span class="bages bages--secondary bages--small">10% OFF</span>
+              <span class="plan__disc">For A Really Basic Website</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--check">
+                <li class="list__item">1 Page</li>
+                <li class="list__item">Design Customization</li>
+                <li class="list__item">Responsive Design</li>
+                <li class="list__item">Content Upload</li>
+                <li class="list__item">2 Plugins</li>
+                <li class="list__itemx">E-Commerce</li>
+                <li class="list__item">Costomer Support</li>
+              </ul>
+              <button class="btn btn--outline btn--block">get now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="plan">
+          <div class="card card--primary plan--popular">
+            <header class="card__header">
+              <h3 class="plan__name">Pro</h3>
+              <span class="plan__price">$200</span>
+              <span class="plan__biling">/Web</span>
+              <span class="bages bages--primary bages--small">10% OFF</span>
+              <span class="plan__disc">For A professional Website</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--check">
+                <li class="list__item">6 Pages</li>
+                <li class="list__item">Design Customization</li>
+                <li class="list__item">Responsive Design</li>
+                <li class="list__item">Content Upload</li>
+                <li class="list__item">6 Plugins</li>
+                <li class="list__item">E-Commerce</li>
+                <li class="list__item">Costumer Support</li>
+              </ul>
+              <button class="btn btn--outline btn--block">get now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">standard</h3>
+              <span class="plan__price">$80</span>
+              <span class="plan__biling">/Web</span>
+              <span class="bages bages--secondary bages--small">10% OFF</span>
+              <span class="plan__disc">For A standard Website</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--check">
+                <li class="list__item">3 Pages</li>
+                <li class="list__item">Design Customization</li>
+                <li class="list__item">Responsive Design</li>
+                <li class="list__item">Content Upload</li>
+                <li class="list__item">4 Plugins</li>
+                <li class="list__item">E-Commerce</li>
+                <li class="list__item">Costumer Support</li>
+              </ul>
+              <button class="btn btn--outline btn--block">get now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ipad -->
+    <section class="block block--dark block--skewed--right block-showcase">
+      <header class="block__header">
+        <h2>heading and i dont know y</h2>
+      </header>
+      <div class="container grid grid--1x2">
+        <picture
+          class="block-showcase__image"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
+        >
+          <source
+            type="image/webp"
+            srcset="images/resized/ipad.webp 1x, images/resized/ipad@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/resized/ipad.png 1x, images/resized/ipad@2x.png 2x"
+          />
+          <img src="images/resized/ipad.png" alt="" />
+        </picture>
+        <ul
+          class="list"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
+        >
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#snap"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Lorem ipsum dolor sit amet.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  fuga quaerat tempore provident quidem esse commodi quas ab
+                  reiciendis impedit temporibus doloribus officiis asperiores,
+                  assumenda omnis eum tenetur vitae. Ut?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#snap"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Lorem ipsum dolor sit amet.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  fuga quaerat tempore provident quidem esse commodi quas ab
+                  reiciendis impedit temporibus doloribus officiis asperiores,
+                  assumenda omnis eum tenetur vitae. Ut?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#snap"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Lorem ipsum dolor sit amet.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  fuga quaerat tempore provident quidem esse commodi quas ab
+                  reiciendis impedit temporibus doloribus officiis asperiores,
+                  assumenda omnis eum tenetur vitae. Ut?
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- testimonial -->
+    <section
+      class="block"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000"
+    >
+      <header class="block__header">
+        <h2>what are our costomers are saying</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ab?
+        </p>
+      </header>
+    </section>
+    <div
+      class="container"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000"
+    >
+      <div class="card test">
+        <div class="grid grid--1x2">
+          <div class="test__image">
+            <img src="images/testimonial.jpg" alt="Apicture of a man" />
+            <span class="icon-contaner icon-contaner--acent">
+              <svg class="icon icon--white icon--small">
+                <use xlink:href="images/sprite.svg#quotes"></use>
+              </svg>
+            </span>
+          </div>
+          <blockquote class="quote">
+            <p class="quote__txt">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos sed
+              tempore autem nemo eveniet voluptas quis quo ea nam numquam!
+            </p>
+            <footer>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Lorem ipsum</h3>
+                  <p class="quote__company">VOA</p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <!-- callout -->
+    <div class="callout callout--primary callout__move">
+      <div class="grid grid--1x2">
+        <div class="callout__content">
+          <h2 class="callout__heading">Lets Get started</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Repudiandae cum, ipsa facere dignissimos impedit officia quis in
+            laboriosam ut consequatur.
+          </p>
+        </div>
+        <a href="" class="btn btn--secondary btn--long">get started</a>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sec">
+        <section class="collaps collaps--ext footer__section">
+          <div class="collaps__header">
+            <h2 class="collaps__heading footer__heading">item 1</h2>
+            <svg class="icon icon--white collaps__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collaps__content">
+            <ul class="list">
+              <li><a href="#">hihigfgklf</a></li>
+              <li><a href="#">hihigdskfj</a></li>
+              <li><a href="#">hihigvkhfg</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collaps collaps--ext footer__section">
+          <div class="collaps__header">
+            <h2 class="collaps__heading footer__heading">item 1</h2>
+            <svg class="icon icon--white collaps__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collaps__content">
+            <ul class="list">
+              <li><a href="#">hihigfgklf</a></li>
+              <li><a href="#">hihigdskfj</a></li>
+              <li><a href="#">hihigvkhfg</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collaps collaps--ext footer__section">
+          <div class="collaps__header">
+            <h2 class="collaps__heading footer__heading">item 1</h2>
+            <svg class="icon icon--white collaps__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collaps__content">
+            <ul class="list">
+              <li><a href="#">hihigfgklf</a></li>
+              <li><a href="#">hihigdskfj</a></li>
+              <li><a href="#">hihigvkhfg</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="footer__brand">
+          <img class="footer__img" src="images/LOGOH.png" alt="" />
+          <h4 class="footer__copyright">Copyright 2020 Abdullah Jafar</h4>
+        </section>
+      </div>
+    </footer>
+
     <script src="main.js"></script>
+    <script src="effect.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
+  <!-- end of body -->
 </html>
