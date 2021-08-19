@@ -142,7 +142,7 @@ a {
 
 .list {
   list-style: none;
-  padding-left: 0 0.5rem;
+  padding: 0 0.5rem;
 }
 .list--inline .list__item {
   display: inline-block;
