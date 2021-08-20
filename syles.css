@@ -1,3 +1,5 @@
+@import "./normalize.css";
+
 :root {
   --primar-color: #3fb6ee;
   --seconary-color: #d31f37;
