@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="syles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -22,6 +22,7 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script src=".htmlnanorc.js"></script>
   </head>
   <!-- end of head -->
   <!-- beginning of body -->
@@ -32,15 +33,17 @@
           ><img class="logo" src="/images/LOGOH.png" alt=""
         /></a>
         <svg class="icon icon--white nav__toggler">
-          <use xlink:href="/images/sprite.svg#menu"></use>
+          <use href="/images/sprite.svg#menu"></use>
         </svg>
 
         <ul class="list nav__list collaps__content">
-          <li id="About_me" class="nav__items"><a href="#">About me</a></li>
+          <li id="About_me" class="nav__items">
+            <a href="#About-me">About me</a>
+          </li>
           <li class="nav__items">
             <a href="mailto:abdullah.haand@gamil.com">contact me</a>
           </li>
-          <li class="nav__items"><a href="#">what i do</a></li>
+          <li class="nav__items"><a href="#What-I-Do">what i do</a></li>
         </ul>
       </nav>
       <section class="block block--dark block--skewed--left hero">
@@ -85,14 +88,14 @@
     </header>
 
     <!-- easy -->
-    <section class="block container extra__padding">
+    <section id="What-I-Do" class="block container extra__padding">
       <header
         class="block__header"
         data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"
         data-aos-duration="1000"
       >
-        <h2>I Am A Web And App Developer</h2>
+        <h2 id="What-I-Do">I Am A Web And App Developer</h2>
         <p>I Enjoy Developing Apps and Website For Others</p>
       </header>
       <article class="grid grid--1x2 feature">
@@ -104,7 +107,7 @@
         >
           <span class="icon-contaner">
             <svg class="icon icon--primary">
-              <use xlink:href="images/sprite.svg#clock"></use>
+              <use href="images/sprite.svg#clock"></use>
             </svg>
           </span>
           <h3 class="feature__heading">Simple Fast Websites</h3>
@@ -148,7 +151,7 @@
         >
           <span class="icon-contaner">
             <svg class="icon icon--primary">
-              <use xlink:href="images/sprite.svg#computer"></use>
+              <use href="images/sprite.svg#computer"></use>
             </svg>
           </span>
           <h3 class="feature__heading">Websites form scratch</h3>
@@ -296,7 +299,7 @@
             <div class="media">
               <div class="media__image">
                 <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#snap"></use>
+                  <use href="images/sprite.svg#snap"></use>
                 </svg>
               </div>
               <div class="media__body">
@@ -317,6 +320,7 @@
     </section>
     <!-- testimonial -->
     <section
+      id="About-me"
       class="block"
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
@@ -339,7 +343,7 @@
             <img src="images/webpic.jpg" alt="Apicture of a man" />
             <span class="icon-contaner icon-contaner--acent">
               <svg class="icon icon--white icon--small">
-                <use xlink:href="images/sprite.svg#quotes"></use>
+                <use href="images/sprite.svg#quotes"></use>
               </svg>
             </span>
           </div>
@@ -353,7 +357,7 @@
               <div class="media">
                 <div class="media__image">
                   <svg class="icon icon--primary quote__line">
-                    <use xlink:href="images/sprite.svg#line"></use>
+                    <use href="images/sprite.svg#line"></use>
                   </svg>
                 </div>
                 <div class="media__body">
@@ -387,7 +391,7 @@
           <div class="collaps__header">
             <h2 class="collaps__heading footer__heading">item 1</h2>
             <svg class="icon icon--white collaps__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
+              <use href="images/sprite.svg#chevron"></use>
             </svg>
           </div>
           <div class="collaps__content">
@@ -402,7 +406,7 @@
           <div class="collaps__header">
             <h2 class="collaps__heading footer__heading">item 1</h2>
             <svg class="icon icon--white collaps__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
+              <use href="images/sprite.svg#chevron"></use>
             </svg>
           </div>
           <div class="collaps__content">
@@ -417,7 +421,7 @@
           <div class="collaps__header">
             <h2 class="collaps__heading footer__heading">item 1</h2>
             <svg class="icon icon--white collaps__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
+              <use href="images/sprite.svg#chevron"></use>
             </svg>
           </div>
           <div class="collaps__content">
@@ -437,7 +441,7 @@
     </footer>
 
     <script src="main.js"></script>
-    <script src="effect.js"></script>
+    <script src="effects.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

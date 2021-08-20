@@ -149,12 +149,12 @@ a {
   margin-right: 2rem;
 }
 .list--check {
-  list-style-image: url(../images/tick.svg);
+  list-style-image: url(./images/tick.svg);
   padding-left: 3rem;
   color: var(--header-color);
 }
 .list__itemx {
-  list-style-image: url(.//images/close.svg);
+  list-style-image: url(./images/close.svg);
   padding-left: 0;
   margin-bottom: 2rem;
   color: var(--header-color);
